@@ -678,11 +678,6 @@ static esp_vfs_t vfs_littlefs_create_struct(bool writeable) {
         vfs.write_p  = NULL;
         vfs.pwrite_p = NULL;
         vfs.fsync_p  = NULL;
-        vfs.link_p   = NULL;
-        vfs.unlink_p = NULL;
-        vfs.rename_p = NULL;
-        vfs.mkdir_p  = NULL;
-        vfs.rmdir_p  = NULL;
     }
     return vfs;
 }
